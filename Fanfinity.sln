@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanfinity", "Fanfinity\Fanfinity.csproj", "{4AE4AC64-4D5F-4379-8C6D-4AC58155844A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanfinity.Tests", "Tests\Fanfinity.Tests\Fanfinity.Tests.csproj", "{32AF1BCD-1612-4CA9-84E6-D286556C75AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4AE4AC64-4D5F-4379-8C6D-4AC58155844A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE4AC64-4D5F-4379-8C6D-4AC58155844A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AE4AC64-4D5F-4379-8C6D-4AC58155844A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AF1BCD-1612-4CA9-84E6-D286556C75AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AF1BCD-1612-4CA9-84E6-D286556C75AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AF1BCD-1612-4CA9-84E6-D286556C75AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AF1BCD-1612-4CA9-84E6-D286556C75AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
