@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Fanfinity
 
     steps:
     - uses: actions/checkout@v3
@@ -25,7 +28,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
       
     - name: Run tests
-      run: dotnet test --no-build --configuration Release --verbosity normal
+      run: dotnet test --no-build --configuration Release --verbosity normal --collect:"XPlat Code Coverage"
       
     - name: Build Docker image
       run: |
@@ -35,6 +38,7 @@ jobs:
     - name: Run Docker container test
       run: |
         docker run -d --name test-fanfinity -p 5000:8080 fanfinity:latest
-        sleep 10
+        sleep 15
         curl -f http://localhost:5000/health || exit 1
         docker stop test-fanfinity
+        docker rm test-fanfinity
