@@ -13,6 +13,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Conn
 builder.Services.AddSingleton<MetricsService>();
 builder.Services.AddHealthChecks();
 
+
 var app = builder.Build();
 
 app.UseSwagger();
